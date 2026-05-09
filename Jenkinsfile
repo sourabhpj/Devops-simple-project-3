@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh 'docker stop my-app1 || true'
                 sh 'docker rm my-app1 || true'
-                sh 'docker run -d --name my-app1 -p 80:80 my-app'
+                sh 'docker run -d --name my-app1 -p 80:80 my-app1'
 
             }
         }
